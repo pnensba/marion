@@ -1,0 +1,145 @@
+#N canvas 646 391 359 155 10;
+#X obj 99 21 tgl 15 0 \$1-capt_bin_disp-fromgui \$1-capt_bin_disp disp
+17 7 0 10 -262144 -1 -1 1 1;
+#X text 2 29 raw;
+#X text 4 62 out;
+#X obj 99 55 tgl 15 0 \$1-capt_bin_in-fromgui \$1-capt_bin_in in 17
+7 0 10 -262144 -1 -1 1 1;
+#X obj 99 72 tgl 15 0 \$1-capt_bin_out-fromgui \$1-capt_bin_out out
+17 7 0 10 -262144 -1 -1 1 1;
+#X obj 99 38 tgl 15 0 \$1-capt_bin_man-fromgui \$1-capt_bin_man man
+17 7 0 10 -262144 -1 -1 0 1;
+#X obj 62 42 tgl 30 0 \$1-capt_bin_inv-fromgui \$1-capt_bin_inv-gui
+empty 35 7 0 10 -258113 -1 -1 1 1;
+#N canvas 0 0 374 184 init 0;
+#X obj 101 -40 loadbang;
+#X msg 101 -2 0;
+#X msg 141 -1 1;
+#X obj 192 40 s \$1-capt_bin_disp;
+#X obj 168 62 s \$1-capt_bin_out;
+#X obj 141 85 s \$1-capt_bin_in;
+#X connect 0 0 1 0;
+#X connect 0 0 2 0;
+#X connect 2 0 3 0;
+#X connect 2 0 4 0;
+#X connect 2 0 5 0;
+#X restore 207 -1 pd init;
+#N canvas 597 185 363 257 collstore 0;
+#X obj 18 47 symbol \$1;
+#X obj 45 163 s coll;
+#X obj 18 117 prepend store;
+#X obj 18 95 pack s f;
+#X obj 18 19 t b f;
+#X obj 18 141 t b a;
+#X obj 18 184 s savecapt;
+#X obj 192 61 symbol \$1;
+#X obj 192 36 loadbang;
+#X obj 192 161 s retrieve_val;
+#X obj 18 -6 r \$1-capt_bin_inv-fromgui;
+#X msg 192 87 \$1-capt_bin_inv;
+#X msg 18 69 \$1-capt_bin_inv-fromgui;
+#X obj 257 36 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X connect 0 0 12 0;
+#X connect 2 0 5 0;
+#X connect 3 0 2 0;
+#X connect 4 0 0 0;
+#X connect 4 1 3 1;
+#X connect 5 0 6 0;
+#X connect 5 1 1 0;
+#X connect 7 0 11 0;
+#X connect 8 0 7 0;
+#X connect 10 0 4 0;
+#X connect 11 0 9 0;
+#X connect 12 0 3 0;
+#X connect 13 0 7 0;
+#X restore 207 21 pd collstore;
+#N canvas 0 0 429 273 oscout 0;
+#X obj 174 96 spigot 1;
+#X obj 135 239 s osc;
+#X msg 89 84 0;
+#X obj 180 137 inlet;
+#X obj 135 165 symbol;
+#X obj 89 60 r capt_init;
+#X obj 135 193 pack s f;
+#X obj 135 136 t b f;
+#X obj 219 76 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 174 30 r \$1-capt_bin_out_val;
+#X obj 219 53 r \$1-capt_bin_out-fromgui;
+#X msg 135 217 capt_bin \$1 \$2;
+#X connect 0 0 7 0;
+#X connect 2 0 7 0;
+#X connect 3 0 4 1;
+#X connect 4 0 6 0;
+#X connect 5 0 2 0;
+#X connect 6 0 11 0;
+#X connect 7 0 4 0;
+#X connect 7 1 6 1;
+#X connect 8 0 0 1;
+#X connect 9 0 0 0;
+#X connect 10 0 8 0;
+#X connect 11 0 1 0;
+#X restore 193 -26 pd oscout;
+#X obj 193 -46 inlet;
+#N canvas 95 414 445 202 in 0;
+#X obj -277 33 inlet;
+#X obj -157 80 spigot 0;
+#X obj -112 62 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj -277 59 spigot 0;
+#X obj -232 41 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj -232 19 expr 1-$f1;
+#X obj -232 -4 r \$1-capt_bin_man-fromgui;
+#X obj -157 19 r \$1-capt_bin-fromgui;
+#X obj -112 41 r \$1-capt_bin_man-fromgui;
+#X obj -226 132 s \$1-capt_bin_rawtmp;
+#X connect 0 0 3 0;
+#X connect 1 0 9 0;
+#X connect 2 0 1 1;
+#X connect 3 0 9 0;
+#X connect 4 0 3 1;
+#X connect 5 0 4 0;
+#X connect 6 0 5 0;
+#X connect 7 0 1 0;
+#X connect 8 0 2 0;
+#X restore 2 -24 pd in;
+#X obj 2 -45 inlet;
+#N canvas 116 69 333 173 display 0;
+#X obj -117 71 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj -162 89 spigot 1;
+#X obj -162 28 r \$1-capt_bin_out_val;
+#X obj -117 50 r \$1-capt_bin_disp-fromgui;
+#X obj -162 114 s \$1-capt_bin_out_val-gui;
+#X connect 0 0 1 1;
+#X connect 1 0 4 0;
+#X connect 2 0 1 0;
+#X connect 3 0 0 0;
+#X restore 206 46 pd display;
+#N canvas 664 93 356 218 compute_out 0;
+#X obj -33 101 demultiplex;
+#X obj 30 124 expr 1-$f1;
+#X obj 30 148 f;
+#X obj 30 82 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
+;
+#X obj -33 36 r \$1-capt_bin_rawtmp;
+#X obj 30 62 r \$1-capt_bin_inv-fromgui;
+#X obj 30 174 s \$1-capt_bin_out_val;
+#X connect 0 0 2 0;
+#X connect 0 1 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 6 0;
+#X connect 3 0 0 1;
+#X connect 4 0 0 0;
+#X connect 5 0 3 0;
+#X restore 205 70 pd compute_out;
+#X obj 27 58 tgl 30 0 \$1-capt_bin_out_val-fromgui \$1-capt_bin_out_val-gui
+empty 17 7 0 10 -257985 -1 -1 0 1;
+#X obj 27 25 tgl 30 0 \$1-capt_bin-fromgui \$1-capt_bin-gui empty 17
+7 0 10 -4034 -1 -1 0 1;
+#X text 66 22 inv;
+#X connect 10 0 9 0;
+#X connect 12 0 11 0;
+#X coords 0 -1 1 1 145 90 1 0 0;

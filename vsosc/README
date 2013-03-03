@@ -1,0 +1,52 @@
+-*- mode:outline; coding:utf-8 -*-
+VERY SIMPLE OSC
+
+code mainly from Daniel Holth, Clinton McChesney, Stock-V2_Lab, Dominique Sacré (pyliblo)
+
+adapted by Vincent Rioux
+GNU General Public License
+
+110726 refreshed code from https://gitorious.org/pyosc/devel
+       now should work with python3 (at last)
+
+* TODO
+
+
+* notes
+this version should work with python2 and python3.
+** liblo
+for compilation with python3 on osx, you might have to add
+'-I/usr/local/include'
+in ext_modules compile_args
+
+* usage
+** see tests folder
+** quick start
+put vsosc folder wherever you need it.
+
+in your python script:
+
+
+# if vsosc is in the parent path:
+# import sys
+# sys.path.append('..')
+# or import ..vsosc
+
+import vsosc
+
+# define a test function
+def test(*msg):
+ print (msg)
+
+# define a server or receiver
+r = vsosc.Receiver(); r.init() # you have to initialize!
+r.bind('/test', test)
+
+# define a client or sender
+s = Sender(); s.init()
+s.send('/test', ('it should work!', 22))
+
+# don't forget to quit the server or your program will hang.
+r.quit()
+
+

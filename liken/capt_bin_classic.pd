@@ -1,0 +1,16 @@
+#N canvas 789 113 358 225 10;
+#X obj 238 38 loadbang;
+#X obj 238 62 symbol \$1;
+#X obj 100 5 notein \$2;
+#X obj 100 29 route \$3;
+#X obj 100 74 > 0;
+#X obj 100 52 f;
+#X obj 100 120 capt_bin \$1;
+#X connect 0 0 1 0;
+#X connect 1 0 6 1;
+#X connect 2 0 3 0;
+#X connect 2 1 5 1;
+#X connect 3 0 5 0;
+#X connect 4 0 6 0;
+#X connect 5 0 4 0;
+#X coords 0 -1 1 1 145 110 1 100 100;

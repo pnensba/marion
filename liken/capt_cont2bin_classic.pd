@@ -1,0 +1,11 @@
+#N canvas 165 366 475 253 10;
+#X obj 100 76 / 127;
+#X obj 343 51 loadbang;
+#X obj 343 75 symbol \$1;
+#X obj 100 51 ctlin \$3 \$2;
+#X obj 100 120 capt_cont2bin \$1;
+#X connect 0 0 4 0;
+#X connect 1 0 2 0;
+#X connect 2 0 4 1;
+#X connect 3 0 0 0;
+#X coords 0 -1 1 1 250 110 1 100 100;

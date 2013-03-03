@@ -1,0 +1,563 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"v",
+				"v"
+			],
+			[
+				"p",
+				"pre	Tag"
+			],
+			[
+				"e",
+				"e"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"code",
+				"code  (element)"
+			],
+			[
+				"background-",
+				"background-color:   (property)"
+			],
+			[
+				"js",
+				"js"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"co",
+				"code	Tag"
+			],
+			[
+				"h",
+				"h3	Tag"
+			],
+			[
+				"h2",
+				"h2	Tag"
+			],
+			[
+				"i",
+				"i"
+			],
+			[
+				"get",
+				"getElementsByTagName"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"t",
+				"title"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/data/git/esonoclaste/of.py",
+			"settings":
+			{
+				"buffer_size": 3076,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/data/git/vrac/liken/startup/launch_pd.py",
+			"settings":
+			{
+				"buffer_size": 1696,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "start.py",
+			"settings":
+			{
+				"buffer_size": 1193,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "plot.py",
+			"settings":
+			{
+				"buffer_size": 341,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lines3d_demo.py",
+			"settings":
+			{
+				"buffer_size": 405,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"alignment ",
+				"Preferences: Alignment File Settings – Default"
+			],
+			[
+				"alignment",
+				"Preferences: Alignment File Settings – Default"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reindent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"pick",
+				"Color picker"
+			],
+			[
+				"color",
+				"Color picker"
+			],
+			[
+				"Instal",
+				"Package Control: Install Package"
+			],
+			[
+				"colo",
+				"Color Picker: Insert Color"
+			],
+			[
+				"open",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"Snippet: ",
+				"Snippet: for (…) {…}"
+			]
+		],
+		"width": 602.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/data/pngit/marion/liken/capt_cont.pd",
+		"/Applications/MAMP/conf/php5.2.17/php.ini",
+		"/data/pngit/tutos/js/files/012.css",
+		"/data/pngit/tutos/js/files/012.js",
+		"/data/pngit/tutos/js/exos/minuteur2.html",
+		"/data/pngit/tutos/js/exos/minuteur.js",
+		"/data/pngit/tutos/js/exos/minuteur2.js",
+		"/data/pngit/tutos/js/files/events.txt",
+		"/data/pngit/tutos/js/exos/affiche_jour.html",
+		"/data/pngit/tutos/js/files/110_events_handlers.html",
+		"/data/pngit/tutos/js/index.html",
+		"/data/pngit/tutos/js/files/12.js",
+		"/data/pngit/tutos/js/files/12_minimal_css_js_include.html",
+		"/data/pngit/tutos/js/files/mots.txt",
+		"/data/pngit/tutos/js/files/exos.js",
+		"/data/pngit/tutos/js/files/21_minimal_css_js_include.html",
+		"/data/pngit/tutos/js/tutos.css",
+		"/data/pngit/tutos/js/sandbox.html",
+		"/data/pngit/tutos/js/files/60_dom.js",
+		"/data/pngit/tutos/js/files/operateurs.txt",
+		"/data/pngit/tutos/js/files/111_fonctions.html",
+		"/data/pngit/tutos/js/files/110_fonctions.js",
+		"/data/pngit/tutos/js/sanbox/sandbox.css",
+		"/data/pngit/tutos/js/sanbox/index.html",
+		"/data/pngit/tutos/js/sanbox/test.html",
+		"/data/pngit/tutos/js/files/90_boucles.js",
+		"/data/pngit/tutos/js/files/70_tableaux.js",
+		"/data/pngit/tutos/js/files/80_conditionnelles.js",
+		"/data/pngit/tutos/js/files/10_minimal_css.html",
+		"/data/pngit/tutos/js/include.js",
+		"/data/pngit/tutos/js/01_basics/51_variables.js",
+		"/data/pngit/tutos/js/01_basics/81_fonctions.html",
+		"/data/pngit/tutos/js/01_basics/80_fonctions.js",
+		"/data/pngit/tutos/js/highlight.js/googlecode.css",
+		"/data/pngit/tutos/js/01_basics/11_minimal_css_js.html",
+		"/data/pngit/tutos/js/01_basics/01_minimal_css.html",
+		"/data/pngit/tutos/js/include.css",
+		"/data/pngit/formations/javascript/include.js",
+		"/data/pngit/formations/javascript/include.css",
+		"/data/pngit/formations/javascript/highlight.js/googlecode.css",
+		"/data/pngit/formations/javascript/formation.css",
+		"/data/pngit/formations/javascript/01_basics/11_minimal_css_js.html",
+		"/data/pngit/formations/javascript/01_basics/61_tableaux.js",
+		"/data/pngit/formations/javascript/01_basics/71_mots.js",
+		"/data/pngit/formations/javascript/01_basics/55_strings.js",
+		"/data/pngit/formations/javascript/01_basics/51_variables.js",
+		"/data/pngit/formations/javascript/01_basics/81_fonctions.html",
+		"/data/pngit/formations/javascript/index.html",
+		"/data/pngit/formations/javascript/01_basics/71_words.js",
+		"/data/pngit/formations/javascript/cache.css",
+		"/data/pngit/formations/javascript/cache.js",
+		"/data/pngit/formations/javascript/010_minimal_css.html",
+		"/data/pngit/formations/javascript/010b.js",
+		"/data/pngit/formations/javascript/highlight.js/rainbow.css",
+		"/data/pngit/formations/javascript/011_cache.html",
+		"/data/pngit/formations/javascript/include01.js",
+		"/data/pngit/formations/javascript/include.txt",
+		"/data/pngit/formations/javascript/010b.css",
+		"/data/pngit/formations/javascript/010.js",
+		"/data/pngit/formations/javascript/010.css",
+		"/data/pngit/formations/javascript/010_minimal_css_js_avec_fichiers_externes.html",
+		"/data/pngit/formations/javascript/010_minimal.html",
+		"/Users/pn/Library/Application Support/Sublime Text 2/Packages/Alignment/Default (OSX).sublime-keymap",
+		"/Users/pn/Library/Application Support/Sublime Text 2/Packages/Terminal/Base File.sublime-settings",
+		"/Users/pn/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/data/git/vrac/javascript/test.html",
+		"/data/git/vrac/javascript/020_minuteur.js",
+		"/data/git/vrac/javascript/020_minuteur.html",
+		"/data/git/vrac/javascript/010_minimal_css_js_avec_fichiers_externes.html",
+		"/Users/pn/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/data/pnwww/header.html",
+		"/data/pnwww/pn.php",
+		"/data/pnwww/chapeau.html",
+		"/data/pnwww/tete.html",
+		"/data/pnwww/actus/actus.php",
+		"/data/pnwww/pn.html",
+		"/data/pnwww/pn.css",
+		"/data/git/vrac/javascript/cours/test.js",
+		"/data/git/vrac/javascript/cours/test.html",
+		"/data/git/vrac/javascript/notes_js.txt"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"out",
+			"jquery",
+			"felix",
+			"block",
+			"titre",
+			"include",
+			"click\n■ focus\n■ blur\n■ change\n■ mouseover (hover part 1)\n■ mouseout (hover part 2)\n■",
+			"click\n■ focus\n■ blur\n■ change\n■ mouseover (hover part 1)\n■ mouseout (hover part 2)\n■ ",
+			"																",
+			"parentNode",
+			"document",
+			"dom",
+			"chaînes",
+			"class",
+			"mots",
+			"01_basics",
+			".menu",
+			"mots",
+			"strong",
+			"h3",
+			"\n      ",
+			"\n    ",
+			"visible",
+			"find",
+			"bouton",
+			"\n",
+			"bouton",
+			"hide",
+			"parag1"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"	",
+			"code",
+			"bouton2\nbouton2\nbouton2"
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/data/git/esonoclaste/of.py",
+					"settings":
+					{
+						"buffer_size": 3076,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								386,
+								423
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1540.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/data/git/vrac/liken/startup/launch_pd.py",
+					"settings":
+					{
+						"buffer_size": 1696,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								310,
+								310
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 226.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "start.py",
+					"settings":
+					{
+						"buffer_size": 1193,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								821,
+								821
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "plot.py",
+					"settings":
+					{
+						"buffer_size": 341,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								286,
+								286
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "lines3d_demo.py",
+					"settings":
+					{
+						"buffer_size": 405,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								174,
+								204
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"010b",
+				"/data/git/vrac/javascript/010b.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 248.0,
+	"status_bar_visible": true
+}

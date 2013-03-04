@@ -4,7 +4,7 @@ empty -2 -6 0 10 -4034 -1 -1 0 1;
 #X obj 205 3 tgl 15 0 \$1-capt_cont_disp-fromgui \$1-capt_cont_disp
 disp 17 7 0 10 -262144 -1 -1 1 1;
 #X obj 29 37 hsl 128 15 0 1 0 0 \$1-capt_cont_max-fromgui \$1-capt_cont_max-gui
-empty -2 -8 0 10 -258113 -1 -1 11700 1;
+empty -2 -8 0 10 -258113 -1 -1 11300 1;
 #X obj 29 54 hsl 128 15 0 1 0 0 \$1-capt_cont_min-fromgui \$1-capt_cont_min-gui
 empty -2 -8 0 10 -4032 -1 -1 0 1;
 #X text 2 34 max;
@@ -12,15 +12,15 @@ empty -2 -8 0 10 -4032 -1 -1 0 1;
 #X floatatom 162 37 5 0 0 0 - - -;
 #X floatatom 162 54 5 0 0 0 - - -;
 #X obj 29 71 hsl 128 15 0 1 0 0 \$1-capt_cont_out_val-fromgui \$1-capt_cont_out_val-gui
-empty -2 -8 0 10 -257985 -1 -1 5970 1;
+empty -2 -8 0 10 -257985 -1 -1 3484 1;
 #X text 2 17 raw;
 #X text 2 68 out;
 #X floatatom 162 71 6 0 0 0 - - -;
 #X floatatom 162 20 5 0 0 0 - - -;
 #X obj 205 37 tgl 15 0 \$1-capt_cont_in-fromgui \$1-capt_cont_in in
 17 7 0 10 -262144 -1 -1 1 1;
-#X obj 205 54 tgl 15 0 \$1-capt_cont_out-fromgui \$1-capt_cont_out
-out 17 7 0 10 -262144 -1 -1 1 1;
+#X obj 205 54 tgl 15 0 \$1-capt_cont_out-fromgui \$1-capt_cont_out-gui
+out 17 7 0 10 -262144 -1 -1 0 1;
 #X obj 205 20 tgl 15 0 \$1-capt_cont_man-fromgui \$1-capt_cont_man
 man 17 7 0 10 -262144 -1 -1 0 1;
 #X obj 205 73 tgl 15 0 \$1-capt_cont_inv-fromgui \$1-capt_cont_inv
@@ -30,39 +30,44 @@ inv 17 7 0 10 -262144 -1 -1 0 1;
 #X msg 101 -2 0;
 #X msg 141 -1 1;
 #X obj 192 40 s \$1-capt_cont_disp;
-#X obj 168 62 s \$1-capt_cont_out;
 #X obj 141 85 s \$1-capt_cont_in;
 #X obj 80 122 s \$1-capt_cont_man;
 #X connect 0 0 1 0;
 #X connect 0 0 2 0;
-#X connect 1 0 6 0;
+#X connect 1 0 5 0;
 #X connect 2 0 3 0;
 #X connect 2 0 4 0;
-#X connect 2 0 5 0;
 #X restore 267 -1 pd init;
-#N canvas 597 185 470 365 collstore 0;
+#N canvas 597 185 629 490 collstore 1;
 #X obj 18 -6 r \$1-capt_cont_max-fromgui;
 #X obj 18 47 symbol \$1;
-#X obj 144 178 s coll;
+#X obj 143 316 s coll;
 #X msg 18 69 \$1-capt_cont_max-fromgui;
 #X obj 18 117 prepend store;
 #X obj 18 95 pack s f;
 #X obj 18 19 t b f;
-#X obj 228 48 symbol \$1;
-#X obj 228 118 prepend store;
-#X obj 228 96 pack s f;
-#X obj 228 20 t b f;
-#X msg 228 70 \$1-capt_cont_min-fromgui;
-#X obj 228 -5 r \$1-capt_cont_min-fromgui;
-#X obj 117 156 t b a;
-#X obj 117 199 s savecapt;
-#X msg 273 203 \$1-capt_cont_max;
-#X msg 308 248 \$1-capt_cont_min;
-#X obj 273 177 symbol \$1;
-#X obj 273 152 loadbang;
-#X obj 273 277 s retrieve_val;
-#X obj 346 148 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 194 66 symbol \$1;
+#X obj 194 136 prepend store;
+#X obj 194 114 pack s f;
+#X obj 194 38 t b f;
+#X msg 194 88 \$1-capt_cont_min-fromgui;
+#X obj 194 13 r \$1-capt_cont_min-fromgui;
+#X obj 116 294 t b a;
+#X obj 116 337 s savecapt;
+#X msg 417 322 \$1-capt_cont_max;
+#X msg 437 350 \$1-capt_cont_min;
+#X obj 417 296 symbol \$1;
+#X obj 417 271 loadbang;
+#X obj 417 430 s retrieve_val;
+#X obj 490 267 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
+#X obj 300 168 symbol \$1;
+#X obj 300 238 prepend store;
+#X obj 300 216 pack s f;
+#X obj 300 140 t b f;
+#X obj 300 115 r \$1-capt_cont_out-fromgui;
+#X msg 300 190 \$1-capt_cont_out-fromgui;
+#X msg 475 377 \$1-capt_cont_out;
 #X connect 0 0 6 0;
 #X connect 1 0 3 0;
 #X connect 3 0 5 0;
@@ -83,10 +88,19 @@ inv 17 7 0 10 -262144 -1 -1 0 1;
 #X connect 16 0 19 0;
 #X connect 17 0 15 0;
 #X connect 17 0 16 0;
+#X connect 17 0 27 0;
 #X connect 18 0 17 0;
 #X connect 20 0 17 0;
+#X connect 21 0 26 0;
+#X connect 22 0 13 0;
+#X connect 23 0 22 0;
+#X connect 24 0 21 0;
+#X connect 24 1 23 1;
+#X connect 25 0 24 0;
+#X connect 26 0 23 0;
+#X connect 27 0 19 0;
 #X restore 267 21 pd collstore;
-#N canvas 0 22 429 273 oscout 1;
+#N canvas 0 22 429 273 oscout 0;
 #X obj 174 96 spigot 1;
 #X obj 135 239 s osc;
 #X msg 89 84 0;
@@ -97,7 +111,7 @@ inv 17 7 0 10 -262144 -1 -1 0 1;
 #X obj 135 136 t b f;
 #X obj 174 30 r \$1-capt_cont_out_val;
 #X obj 219 53 r \$1-capt_cont_out-fromgui;
-#X obj 219 76 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 219 76 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X msg 135 217 /pd/capt_cont \$1 \$2;
 #X connect 0 0 7 0;
@@ -191,10 +205,12 @@ inv 17 7 0 10 -262144 -1 -1 0 1;
 #X connect 15 0 12 1;
 #X connect 16 0 15 0;
 #X restore 265 70 pd compute_out;
+#X obj 159 94 outlet;
 #X connect 0 0 12 0;
 #X connect 2 0 6 0;
 #X connect 3 0 7 0;
 #X connect 8 0 11 0;
+#X connect 11 0 25 0;
 #X connect 20 0 19 0;
 #X connect 22 0 21 0;
 #X coords 0 -1 1 1 250 90 1 0 0;

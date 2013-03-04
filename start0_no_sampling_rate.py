@@ -11,16 +11,15 @@ sub = subprocess.Popen(path+' -path liken -mididev 1 capteurs_midi.pd', shell=Tr
 global time0, recording, a
 recording = False
 time0 = 0
-a = [[],[],[],[]]
+a = [[[],[]],[[],[]],[[],[]]]
 
 def capteurs(*v):
   global recording, time0, a
-  val = v[0]
+  capt = int(v[0][0][1])
+  val = v[0][1]
   if recording: 
-    a[0].append(time.time()-time0)
-    a[1].append(val[0])
-    a[2].append(val[1])
-    a[3].append(val[2])
+    a[capt][0].append(time.time()-time0)
+    a[capt][1].append(val)
 
 def trigger(*v):
   global recording, time0, a
@@ -30,14 +29,15 @@ def trigger(*v):
     print'rec'
     time0 = time.time()
     recording = True
-    a = [[],[],[],[]]
+    a = [[[],[]],[[],[]],[[],[]]]
   else: 
     print 'stop'
-    print a
-    savetxt('test.txt', array(a))
+    savetxt('x.txt', array(a[0]))
+    savetxt('y.txt', array(a[1]))
+    savetxt('z.txt', array(a[2]))
 
 r = vsosc.Receiver('127.0.0.1', 9001)
-r.bind('/pd/capts', capteurs)
+r.bind('/pd/capt_cont', capteurs)
 r.bind('/pd/capt_bin', trigger)
 
 try: 

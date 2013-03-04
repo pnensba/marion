@@ -1,15 +1,18 @@
 #!/Library/Frameworks/Python.framework/Versions/Current/bin/python2.7
 from mpl_toolkits.mplot3d import axes3d
 import matplotlib.pyplot as plt
-from numpy import *
-x = loadtxt('x.txt')
-y = loadtxt('y.txt')
-z = loadtxt('z.txt')
+import numpy as np
 
-print x,y,z
-fig = plt.figure()
-ax = fig.gca(projection='3d')
+a = np.loadtxt('/data/pngit/marion/test.txt')
+if 0:
+	from mayavi import mlab
+	s = mlab.mesh(a[1],a[2],a[3])
+	mlab.show()
 
-ax.plot(x[1][:100],y[1][:100],z[1][:100])
+if 1:
+    fig = plt.figure()
+    ax = fig.gca(projection='3d')
 
-plt.show()
+    ax.plot(a[1],a[2],a[3])
+
+    plt.show()

@@ -33,7 +33,6 @@ def trigger(*v):
     a = [[],[],[],[]]
   else: 
     print 'stop'
-    print a
     savetxt('test.txt', array(a))
 
 r = vsosc.Receiver('127.0.0.1', 9001)

@@ -32,7 +32,8 @@ def trigger(*v):
     a = [[],[],[],[]]
   else: 
     print 'stop'
-    savetxt('test.txt', array(a))
+    savetxt('geste_dernier.txt', array(a))
+    savetxt('geste_'+str(time.time())+'.txt', array(a))
 
 r = vsosc.Receiver('127.0.0.1', 9001)
 r.bind('/pd/capts', capteurs)

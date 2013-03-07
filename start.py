@@ -24,8 +24,7 @@ def capteurs(*v):
 
 def trigger(*v):
   global recording, time0, a
-  val = v[0][1]
-  print val
+  val = v[0][0]
   if val == 1:
     print'rec'
     time0 = time.time()
